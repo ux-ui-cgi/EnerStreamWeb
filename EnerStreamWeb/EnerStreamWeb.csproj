@@ -26,10 +26,10 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="index.html" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\index.html" />
     <None Include="wwwroot\media\00.ogv" />
     <None Include="wwwroot\media\02.ogv" />
     <None Include="wwwroot\media\03.ogv" />
