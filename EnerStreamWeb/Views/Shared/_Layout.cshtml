@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["                                                                                                                                                                                         Title"] - EnerStreamWeb</title>
+@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EnerStreamWeb.styles.css" asp-append-version="true" />*@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-overwrite.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/carousel.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/flip-cards.css" />
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <header>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-light fixed-top" aria-label="Ninth navbar example">
+    <div class="container-xl">
+
+
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="navbar-nav-logo" src="/media/EnerStreamLogoWeb.svg" /></a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExample07XL">
+         <ul class="navbar-nav ">
+        <li class="nav-item">
+           <a class="nav-link active" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Home" asp-action="Index" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="CompanyBackground">Company Background</a></li>
+            <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="OurPeople">Our People </a></li>
+                                <li><a class="dropdown-item" href="https://www.rockpointgs.com/" target="_blank">Rockpoint info</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Products & Services
+          </a>
+
+
+
+
+
+
+          <ul class="dropdown-menu">
+
+
+
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="PortfolioManagement">Portfolio Management Services</a></li>
+
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="PricingProducts">Strutured Pricing Products </a></li>
+
+              <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="RockpointInfo">Energy assessment </a></li>
+
+          </ul>
+
+        </li>
+
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Testimonials
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Testimonials">Testimonials</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Assocciations">Assocciations</a></li>
+          </ul>
+        </li>
+
+
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             The Market
+          </a>
+          <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Renewables">Renewables</a></li>
+
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Fundamentals">Fundamentals</a></li>
+
+            <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="EnerstreamNews">Enerstream News</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="IndustryLinks">Industry Links</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="EnergyConverter">Energy Converter</a></li>
+          </ul>
+      </ul>
+       
+      </div>
+    </div>
+  </nav>
+   
+
+</header>
+
+
+
+ 
+        <main role="main" >
+            @RenderBody()
+        </main>
+
+
+
+
+
+    <!-- FOOTER -->
+    
+    <a class="float-end back-to-top" href="#">Back to top</a>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Legal Notice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Enerstream Inc</p>
+        </footer>
+    </div>
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+@*    <script src="bootstrap.bundle.min.js"></script>
+*@    <script src="~/js/carousel.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

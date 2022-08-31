@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\bootstrap - Copy\**" />
+    <Content Remove="wwwroot\lib\bootstrap - Copy\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap - Copy\**" />
+    <None Remove="wwwroot\lib\bootstrap - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\ResponsibilityOLD.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="img\shutterstock_190882616.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="img\shutterstock_190882616.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\media\00.ogv" />
+    <None Include="wwwroot\media\02.ogv" />
+    <None Include="wwwroot\media\03.ogv" />
+    <None Include="wwwroot\media\04.ogv" />
+    <None Include="wwwroot\media\05.ogv" />
+    <None Include="wwwroot\media\07.ogv" />
+    <None Include="wwwroot\media\EnerStreamLogoWeb.svg" />
+  </ItemGroup>
+
+</Project>
