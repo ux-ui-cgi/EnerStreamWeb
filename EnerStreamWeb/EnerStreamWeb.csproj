@@ -26,7 +26,6 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="index.html" />
   </ItemGroup>
 
   <ItemGroup>
